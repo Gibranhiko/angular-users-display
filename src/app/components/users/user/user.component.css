@@ -1,0 +1,17 @@
+.user-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-container.active {
+  border: 2px solid rgb(255, 208, 0);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}

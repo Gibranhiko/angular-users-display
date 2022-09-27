@@ -1,0 +1,6 @@
+<ul class="header-container">
+  <li>Name: {{ (userData$ | async)?.name }}</li>
+  <li>Date: {{ (userData$ | async)?.date | date: ' M/d/yy, h:mm a' }}</li>
+  <li>Description: {{ (userData$ | async)?.description }}</li>
+  <li>Status: {{ (userData$ | async)?.status }}</li>
+</ul>
