@@ -1,7 +1,7 @@
-<div class="user-container" [ngClass]="users.isActive ? 'active' : ''">
+<div class="user-container" [ngClass]="user.isActive ? 'active' : ''">
   <div class="user-info">
-    <span>Name: {{ users.name }}</span>
-    <span>Status: {{ users.status ? 'Active' : 'Inactive' }}</span>
+    <span>Name: {{ user.name }}</span>
+    <span>Status: {{ user.status ? 'Active' : 'Inactive' }}</span>
   </div>
-  <button type="button" (click)="showUser(users)">Show</button>
+  <button type="button" (click)="showUser(user)">Show</button>
 </div>

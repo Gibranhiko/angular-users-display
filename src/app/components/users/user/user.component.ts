@@ -8,7 +8,7 @@ import { SelectedUserService } from '../../../services/selected-user';
   styleUrls: ['./user.component.scss'],
 })
 export class UserComponent {
-  @Input() users: Users;
+  @Input() user: Users;
   @Output() isActive: EventEmitter<void> = new EventEmitter<void>();
 
   constructor(private selectedUserService: SelectedUserService) {}
