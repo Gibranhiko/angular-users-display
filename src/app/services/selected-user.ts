@@ -15,6 +15,7 @@ export class SelectedUserService {
       date: new Date(0),
       description: '',
       status: false,
+      isActive: false,
     });
 
   get selectedUser(): Observable<Users> {

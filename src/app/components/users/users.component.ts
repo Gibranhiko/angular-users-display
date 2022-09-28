@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Users } from '../../models/users';
 import { GetUsersService } from '../../services/get-users';
 
@@ -9,15 +9,20 @@ import { GetUsersService } from '../../services/get-users';
 })
 export class UsersComponent {
   users: Users[] = [];
+  @Output() isActive = new EventEmitter<number>();
   constructor(private getUsersService: GetUsersService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getUsersData();
   }
 
-  getUsersData() {
+  getUsersData(): void {
     this.getUsersService.getUsers().subscribe((users: Users[]) => {
       this.users = users;
     });
+  }
+
+  isUserActive(): void {
+    this.users.forEach((user) => (user.isActive = false));
   }
 }

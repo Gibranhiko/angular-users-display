@@ -6,6 +6,7 @@ export const users = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac sollicitudin justo. Mauris auctor porttitor elit, sed gravida massa venenatis ac',
     status: true,
+    isActive: false,
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const users = [
     date: new Date(1997, 3, 17),
     description: 'Suspendisse bibendum euismod lorem a sodales.',
     status: false,
+    isActive: false,
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const users = [
     description:
       'Phasellus sagittis mollis pretium. Pellentesque sit amet nulla semper, porttitor ligula tempus, feugiat nulla. In gravida, ex at molestie rhoncus, massa mi eleifend est, ut luctus diam dui et tortor. Nulla aliquam vitae eros vel lobortis.',
     status: true,
+    isActive: false,
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ export const users = [
     description:
       'In laoreet, quam et bibendum iaculis, purus elit semper lacus, id hendrerit metus justo id massa. ',
     status: false,
+    isActive: false,
   },
   {
     id: 5,
@@ -37,6 +41,7 @@ export const users = [
     description:
       'Etiam dictum nisl mauris. Praesent ante justo, ornare non est quis, aliquet ornare lorem. Morbi ac arcu a purus blandit sodales id pretium elit.',
     status: true,
+    isActive: false,
   },
   {
     id: 6,
@@ -44,6 +49,7 @@ export const users = [
     date: new Date(2003, 9, 23),
     description: 'Aliquam eu porttitor nibh, at facilisis libero.',
     status: false,
+    isActive: false,
   },
   {
     id: 7,
@@ -52,6 +58,7 @@ export const users = [
     description:
       'Nulla tincidunt, sem quis aliquam pretium, sem sapien laoreet ipsum, non pharetra turpis lorem at nisi.',
     status: true,
+    isActive: false,
   },
   {
     id: 8,
@@ -60,6 +67,7 @@ export const users = [
     description:
       'Sed mi purus, placerat non nibh nec, ornare suscipit magna. In sed aliquam est.',
     status: false,
+    isActive: false,
   },
   {
     id: 9,
@@ -68,5 +76,6 @@ export const users = [
     description:
       'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
     status: true,
+    isActive: false,
   },
 ];

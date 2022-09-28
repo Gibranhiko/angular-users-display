@@ -4,4 +4,5 @@ export interface Users {
   date: Date;
   description: string;
   status: boolean;
+  isActive: boolean;
 }
